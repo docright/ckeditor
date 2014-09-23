@@ -99,7 +99,8 @@ module Ckeditor
 
   # All css and js files from ckeditor folder
   def self.assets
-    @@assets ||= Utils.select_assets("ckeditor", "vendor/assets/javascripts") << "ckeditor/init.js"
+    # @@assets ||= Utils.select_assets("ckeditor", "vendor/assets/javascripts") << "ckeditor/init.js"
+    @@assets ||= []
   end
 
   def self.picture_model(&block)
